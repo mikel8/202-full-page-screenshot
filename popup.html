@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screenshot Extension</title>
+  <style>
+    body {
+      width: 250px;
+      color:blue;
+      height: 180px;
+      padding: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      color:green;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .animation {
+      width: 100px;
+      height: 100px;
+      color:orange;
+      margin: 0 auto;
+      background-image: url('pacman.gif');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .download-buttons {
+      display: flex;
+      color: gold;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+
+    .download-buttons button {
+      margin-left: 5px;
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: yellow;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Screenshot in Progress...</h1>
+  <div class="animation"></div>
+  <div class="download-buttons">
+    <button id="pngDownload">PNG Download</button>
+    <button id="pdfDownload">PDF Download</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
